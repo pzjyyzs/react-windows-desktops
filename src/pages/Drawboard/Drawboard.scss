@@ -1,0 +1,43 @@
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+.toolbar {
+    display: flex;
+    padding: 10px;
+    height: 120px;
+    background-color: #f5f6f7;
+
+    &-item {
+        margin: 0 5px;
+    }
+
+    &-divider {
+        margin: 0 5px;
+        width: 1px;
+        height: auto;
+        align-self: stretch;
+        flex-shrink: 0;
+        border: none;
+        background-color: rgba(0, 0, 0, .12);
+    }
+}
+
+.toolpanel {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+}
+
+.canvas {
+    margin-left: 10px;
+    padding: 10px;
+    width: 910px;
+    height: 600px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, .2), 0px 1px 1px 0px rgba(0, 0, 0, .14), 0px 1px 3px 0px rgba(0, 0, 0, .12);
+}
+
+.active {
+    border: 4px solid #bcdbfa;
+}

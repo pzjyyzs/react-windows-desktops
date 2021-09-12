@@ -1,0 +1,16 @@
+.calnpane {
+    position: absolute;
+    right: 12px;
+    bottom: 52px;
+    background: hsla(0, 0%, 100%, .88);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+    z-index: 9999;
+    border-radius: 6px;
+
+    &[data-hide="true"] {
+        bottom: 10px;
+        transform: translateY(120%);
+    }
+}
