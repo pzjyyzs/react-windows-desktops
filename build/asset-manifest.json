@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1f9601e0.chunk.css",
+    "main.js": "/static/js/main.acf5b297.chunk.js",
+    "main.js.map": "/static/js/main.acf5b297.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6e088331.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6e088331.js.map",
+    "static/js/2.6e9d907b.chunk.js": "/static/js/2.6e9d907b.chunk.js",
+    "static/js/2.6e9d907b.chunk.js.map": "/static/js/2.6e9d907b.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.1f9601e0.chunk.css.map": "/static/css/main.1f9601e0.chunk.css.map",
+    "static/js/2.6e9d907b.chunk.js.LICENSE.txt": "/static/js/2.6e9d907b.chunk.js.LICENSE.txt",
+    "static/media/MineSweeper.98788ca4.png": "/static/media/MineSweeper.98788ca4.png",
+    "static/media/calendar.e5c913a7.png": "/static/media/calendar.e5c913a7.png",
+    "static/media/chrome.41b68848.png": "/static/media/chrome.41b68848.png",
+    "static/media/desktop.052ce30f.jpg": "/static/media/desktop.052ce30f.jpg",
+    "static/media/draw.699559f1.png": "/static/media/draw.699559f1.png",
+    "static/media/index.scss": "/static/media/iconfont.8b4222e2.woff",
+    "static/media/mail.47e49567.png": "/static/media/mail.47e49567.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6e088331.js",
+    "static/js/2.6e9d907b.chunk.js",
+    "static/css/main.1f9601e0.chunk.css",
+    "static/js/main.acf5b297.chunk.js"
+  ]
+}
