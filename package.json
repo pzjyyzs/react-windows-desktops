@@ -162,5 +162,6 @@
     "redux": "^4.1.1",
     "redux-immutable": "^4.0.0",
     "redux-thunk": "^2.3.0"
-  }
+  },
+  "homepage": "https://pzjyyzs.github.io/react-windows-desktops/build"
 }
