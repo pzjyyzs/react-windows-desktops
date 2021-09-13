@@ -12,6 +12,7 @@ import WinStart from '../WinStart/WinStart';
 import MineSweeper from './../MineSweeper/MineSweeper';
 import Drawboard from './../Drawboard/Drawboard';
 import DragIcon from '../../component/DragIcon/DragIcon';
+import Incomplete from '../Incomplete/Incomplete';
 
 
 class Home extends Component {
@@ -49,7 +50,7 @@ class Home extends Component {
             case 'Drawboard':
                 return <Drawboard></Drawboard>
             default: 
-                return <View>test</View>
+                return <Incomplete></Incomplete>
         }
     }
 

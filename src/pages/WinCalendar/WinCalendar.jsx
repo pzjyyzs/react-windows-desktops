@@ -13,7 +13,7 @@ class WinCalendar extends Component {
 
     componentDidMount() {
         const { loaded } = this.state;
-        if (!loaded) {
+        if (!loaded &&  window.dycalendar &&  window.dycalendar.draw) {
             window.dycalendar.draw({
                 target: '#dycalendar',
                 type: 'month',

@@ -23,7 +23,9 @@ class WindowsWindow extends Component {
                 size: {
                     width,
                     height,
-                }
+                },
+                minWidth: width,
+                minHeight: height
             })
 
             this.rndRef.current.updatePosition({
@@ -186,8 +188,8 @@ class WindowsWindow extends Component {
                 onResizeStop={this.positionChange}
                 onDragStop={this.dragStop}
                 onClick={this.handleClick}
-                minWidth={ 300 }
-                minHeight={ 200 }
+                minWidth={ apps.minWidth ||300 }
+                minHeight={ apps.minHeight || 200 }
                 maxWidth={ apps.maxWidth }
             >
                 <Window
@@ -197,7 +199,7 @@ class WindowsWindow extends Component {
                 >
                     <TitleBar
                         controls
-                        title={this.handleTest()}
+                        title={apps.type}
                         onCloseClick={this.handleCloseWindow.bind(this)}
                         onMaximizeClick={this.handleMaxSize.bind(this)}
                         onMinimizeClick={this.handleMinSize.bind(this)}

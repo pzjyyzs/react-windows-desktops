@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-windows-desktops/build/static/css/main.db2d7d1a.chunk.css",
-    "main.js": "/react-windows-desktops/build/static/js/main.acf5b297.chunk.js",
-    "main.js.map": "/react-windows-desktops/build/static/js/main.acf5b297.chunk.js.map",
+    "main.css": "/react-windows-desktops/build/static/css/main.79f8ee77.chunk.css",
+    "main.js": "/react-windows-desktops/build/static/js/main.2080dcab.chunk.js",
+    "main.js.map": "/react-windows-desktops/build/static/js/main.2080dcab.chunk.js.map",
     "runtime-main.js": "/react-windows-desktops/build/static/js/runtime-main.fb403127.js",
     "runtime-main.js.map": "/react-windows-desktops/build/static/js/runtime-main.fb403127.js.map",
-    "static/js/2.6e9d907b.chunk.js": "/react-windows-desktops/build/static/js/2.6e9d907b.chunk.js",
-    "static/js/2.6e9d907b.chunk.js.map": "/react-windows-desktops/build/static/js/2.6e9d907b.chunk.js.map",
+    "static/js/2.4c0f5e37.chunk.js": "/react-windows-desktops/build/static/js/2.4c0f5e37.chunk.js",
+    "static/js/2.4c0f5e37.chunk.js.map": "/react-windows-desktops/build/static/js/2.4c0f5e37.chunk.js.map",
     "index.html": "/react-windows-desktops/build/index.html",
-    "static/css/main.db2d7d1a.chunk.css.map": "/react-windows-desktops/build/static/css/main.db2d7d1a.chunk.css.map",
-    "static/js/2.6e9d907b.chunk.js.LICENSE.txt": "/react-windows-desktops/build/static/js/2.6e9d907b.chunk.js.LICENSE.txt",
+    "static/css/main.79f8ee77.chunk.css.map": "/react-windows-desktops/build/static/css/main.79f8ee77.chunk.css.map",
+    "static/js/2.4c0f5e37.chunk.js.LICENSE.txt": "/react-windows-desktops/build/static/js/2.4c0f5e37.chunk.js.LICENSE.txt",
     "static/media/MineSweeper.98788ca4.png": "/react-windows-desktops/build/static/media/MineSweeper.98788ca4.png",
     "static/media/calendar.e5c913a7.png": "/react-windows-desktops/build/static/media/calendar.e5c913a7.png",
     "static/media/chrome.41b68848.png": "/react-windows-desktops/build/static/media/chrome.41b68848.png",
@@ -20,8 +20,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.fb403127.js",
-    "static/js/2.6e9d907b.chunk.js",
-    "static/css/main.db2d7d1a.chunk.css",
-    "static/js/main.acf5b297.chunk.js"
+    "static/js/2.4c0f5e37.chunk.js",
+    "static/css/main.79f8ee77.chunk.css",
+    "static/js/main.2080dcab.chunk.js"
   ]
 }

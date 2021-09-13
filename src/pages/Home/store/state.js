@@ -103,6 +103,18 @@ export default fromJS({
                 x: 0,
                 y: 186
             },
+            dragline: {
+                x: 0,
+                y: 186,
+                width: 60,
+                height: 93,
+                leftline: 0,
+                rightline: 186 + 60,
+                topline: 0,
+                bottomline: 186 + 186,
+                verticacenterline: 60 / 2,
+                horizontalcenterline: (186 + 186) / 2,
+            },
             disableDrag: false
         },
         {
@@ -113,8 +125,8 @@ export default fromJS({
             isShow: true,
             position: null,
             size: {
-                width: 600,
-                height: 600,
+                width: 0,
+                height: 0,
                 originalWidth: 0,
                 originalHeight: 0
             },
@@ -122,7 +134,20 @@ export default fromJS({
                 x: 0,
                 y: 279
             },
-            disableDrag: false
+            disableDrag: false,
+            dragline: {
+                x: 0,
+                y: 279,
+                width: 60,
+                height: 93,
+                leftline: 0,
+                rightline: 279 + 60,
+                topline: 0,
+                bottomline: 279 + 279,
+                verticacenterline: 60 / 2,
+                horizontalcenterline: (279 + 279) / 2,
+            },
+            isBigSize: true
         },
         {
             name: 'Drawboard',
@@ -140,6 +165,18 @@ export default fromJS({
             iconPosition: {
                 x: 0,
                 y: 372
+            },
+            dragline: {
+                x: 0,
+                y: 372,
+                width: 60,
+                height: 93,
+                leftline: 0,
+                rightline: 372 + 60,
+                topline: 0,
+                bottomline: 372 + 372,
+                verticacenterline: 60 / 2,
+                horizontalcenterline: (372 + 372) / 2,
             },
             disableDrag: false,
             isBigSize: true
