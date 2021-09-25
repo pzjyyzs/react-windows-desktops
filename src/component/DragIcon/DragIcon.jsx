@@ -13,10 +13,10 @@ const DragIcon = ({ item, handleDoubleClick, _start, _drag, _end }) => {
             }
             const app = appRef.current;
             const x = event.pageX - app.offsetLeft, // 坐标 - 元素左边的偏移
-                y = event.pageY - app.offsetTop; // 
+                y = event.pageY - app.offsetTop; // 坐标 - 元素上边的偏移
             const coordinates = { x, y }
             setIsMove(true);
-            setMousePosition(coordinates);
+            setMousePosition(coordinates); // 点击的点 在元素内的坐标
             _start();
         },
         [_start],
@@ -39,7 +39,9 @@ const DragIcon = ({ item, handleDoubleClick, _start, _drag, _end }) => {
             e.stopPropagation();
             const app = appRef.current;
 
-            if (isMove) {
+            if (isMove && mousePosition) {
+                // e.pageX - mousePosition.x 鼠标移动的坐标 减掉 鼠标的点击内的距离得到 元素的坐标
+                // 加元素的宽度 超过屏幕的宽度 就是贴边
                if ((e.pageX - mousePosition.x + app.clientWidth) > window.innerWidth) {
                     app.style.left = `${(window.innerWidth - app.clientWidth) / window.innerWidth * 100}%`;
                 } else {

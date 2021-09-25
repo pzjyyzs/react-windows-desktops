@@ -51,18 +51,18 @@ class DesktopApps extends React.Component {
                        x =  target.offsetLeft,
                        y = target.offsetTop;
             return {
-                target,
-                i,
-                x,
-                y,
-                width,
-                height,
-                leftline: x,
-                rightline: x + width,
-                topline: y,
-                bottomline: y + height,
-                verticacenterline:  x + width / 2,
-                horizontalcenterline: y + height / 2,
+                target, // 元素
+                i, // 序号
+                x, // 元素坐标
+                y, // 元素坐标
+                width, // 宽
+                height, // 高
+                leftline: x, // 左对齐线
+                rightline: x + width,// 右对齐线
+                topline: y, // 上对齐线
+                bottomline: y + height, // 下对齐线
+                verticacenterline:  x + width / 2, // 水平对齐
+                horizontalcenterline: y + height / 2, // 垂直对齐线
             }
         });
     }
@@ -70,6 +70,7 @@ class DesktopApps extends React.Component {
     calc = (index) => {
         return (x, y) => {
             const child = this.$children[index];
+            // 选择不是拖拽的所有元素
             const compares = this.$children.filter((_, i) => i !== index);
 
             if (compares.length === 0) {
@@ -81,6 +82,7 @@ class DesktopApps extends React.Component {
     }
 
     calcAndDrawLines = (values, target, compares) => {
+        //
         const { v: x, indices: indices_x, lines: vLines } = this.calcPosValues(values, target, compares, 'x');
         const { v: y, indices: indices_y, lines: hLines } = this.calcPosValues(values, target, compares, 'y');
 
@@ -117,27 +119,33 @@ class DesktopApps extends React.Component {
     calcPosValues = (values, target, compares, key) => {
         const results = {};
         const directions = {
-            x: ['ll', 'rr', 'lr'],
-            y: ['tt', 'bb', 'tb'],
+            x: ['ll', 'rr', 'lr'], // 左对齐，右对齐， 水平对齐
+            y: ['tt', 'bb', 'tb'], // 上对齐线，下对齐线，垂直对齐线
         }
 
+        // 取水平方向或者垂直方向的线
         const validDirections = directions[key].filter(dire => ['tt', 'bb', 'll', 'rr', 'tb', 'lr' ].includes(dire));
 
         compares.forEach(compare => {
             validDirections.forEach(dire => {
                 const { near, dist, value, origin, length } = this.calcPosValuesSingle(values, dire, target, compare, key);
                 if (near) {
-                    checkArrayWithPush(results, dist, { i: compare.i, $: compare.$ , value, origin, length })
+                    checkArrayWithPush(results, dist, { i: compare.i, $: compare.target , value, origin, length, dire })
                 }
             })
         })
 
-        const resultArray = Object.entries(results)
+        const resultArray = Object.entries(results);
+
         if (resultArray.length) {
-            const [minDistance, activeCompares] = resultArray.sort(([dist1], [dist2]) => Math.abs(dist1) - Math.abs(dist2))[0]
+            // 如果同一方向的三条线 出现误差 取最小的误差
+            const [minDistance, activeCompares] = resultArray.sort(([dist1], [dist2]) =>{
+                return Math.abs(dist1) - Math.abs(dist2)
+
+            })[0]
             const dist = parseInt(minDistance)
             return {
-                v: values[key] - dist,
+                v: values[key] - dist,// 辅助线的坐标
                 dist: dist,
                 lines: activeCompares,
                 indices: activeCompares.map(({ i }) => i),
@@ -212,18 +220,18 @@ class DesktopApps extends React.Component {
               { height: H, width: W } = target,
               { leftline, rightline, topline, bottomline } = compare;
         const
-              T = y,
-              B = y + H,
-              L = x,
-              R = x + W
+              T = y, // 元素的上对齐线的y坐标
+              B = y + H, // 下对齐线的y坐标
+              L = x, // 左对齐线的x坐标
+              R = x + W // 右对齐线的x坐标
         
         const direValues = {
                 x: [topline, bottomline, T, B],
                 y: [leftline, rightline, L, R],
             }
         
-        const length = getMaxDistance(direValues[key])
-        const origin = Math.min(...direValues[key])
+        const length = getMaxDistance(direValues[key]) // 计算拖拽元素和对比元素的辅助线差值
+        const origin = Math.min(...direValues[key]) // 获得最小的值
         return { length, origin }
     }
 

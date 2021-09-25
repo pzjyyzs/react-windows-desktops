@@ -117,6 +117,7 @@ export default fromJS({
             },
             disableDrag: false
         },
+        /* 
         {
             name: 'MineSweeper',
             type: 'MineSweeper',
@@ -180,7 +181,7 @@ export default fromJS({
             },
             disableDrag: false,
             isBigSize: true
-        }
+        } */
     ],
     openWindowList: [],
     sidepane: true,
