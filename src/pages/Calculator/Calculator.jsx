@@ -36,7 +36,12 @@ class Calculator extends Component {
 
             } else {
                 let data = String(showValue).replace(/,/g, '');
-                let end = this.formatText(`${data}${number}`);
+                let end = '';
+                if (number === '.') {
+                    end = `${data}${number}`;
+                } else {
+                    end = this.formatText(`${data}${number}`);
+                }
                 let val = end.length > 10 ? showValue : end;
                 this.setState({  
                     showValue: val
