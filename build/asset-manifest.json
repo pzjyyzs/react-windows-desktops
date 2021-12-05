@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-windows-desktops/build/static/css/main.1009fdc5.chunk.css",
-    "main.js": "/react-windows-desktops/build/static/js/main.11ef5a5d.chunk.js",
-    "main.js.map": "/react-windows-desktops/build/static/js/main.11ef5a5d.chunk.js.map",
-    "runtime-main.js": "/react-windows-desktops/build/static/js/runtime-main.fb403127.js",
-    "runtime-main.js.map": "/react-windows-desktops/build/static/js/runtime-main.fb403127.js.map",
-    "static/js/2.17f450bc.chunk.js": "/react-windows-desktops/build/static/js/2.17f450bc.chunk.js",
-    "static/js/2.17f450bc.chunk.js.map": "/react-windows-desktops/build/static/js/2.17f450bc.chunk.js.map",
+    "main.css": "/react-windows-desktops/build/static/css/main.bffeba34.chunk.css",
+    "main.js": "/react-windows-desktops/build/static/js/main.b3e26a4f.chunk.js",
+    "runtime-main.js": "/react-windows-desktops/build/static/js/runtime-main.139f6221.js",
+    "static/js/2.93175310.chunk.js": "/react-windows-desktops/build/static/js/2.93175310.chunk.js",
+    "static/js/3.101d12c1.chunk.js": "/react-windows-desktops/build/static/js/3.101d12c1.chunk.js",
+    "static/css/4.cd46c854.chunk.css": "/react-windows-desktops/build/static/css/4.cd46c854.chunk.css",
+    "static/js/4.43670d1d.chunk.js": "/react-windows-desktops/build/static/js/4.43670d1d.chunk.js",
     "index.html": "/react-windows-desktops/build/index.html",
-    "static/css/main.1009fdc5.chunk.css.map": "/react-windows-desktops/build/static/css/main.1009fdc5.chunk.css.map",
-    "static/js/2.17f450bc.chunk.js.LICENSE.txt": "/react-windows-desktops/build/static/js/2.17f450bc.chunk.js.LICENSE.txt",
+    "static/js/2.93175310.chunk.js.LICENSE.txt": "/react-windows-desktops/build/static/js/2.93175310.chunk.js.LICENSE.txt",
+    "static/js/3.101d12c1.chunk.js.LICENSE.txt": "/react-windows-desktops/build/static/js/3.101d12c1.chunk.js.LICENSE.txt",
     "static/media/MineSweeper.98788ca4.png": "/react-windows-desktops/build/static/media/MineSweeper.98788ca4.png",
     "static/media/calendar.e5c913a7.png": "/react-windows-desktops/build/static/media/calendar.e5c913a7.png",
     "static/media/chrome.41b68848.png": "/react-windows-desktops/build/static/media/chrome.41b68848.png",
@@ -19,9 +19,9 @@
     "static/media/mail.47e49567.png": "/react-windows-desktops/build/static/media/mail.47e49567.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.fb403127.js",
-    "static/js/2.17f450bc.chunk.js",
-    "static/css/main.1009fdc5.chunk.css",
-    "static/js/main.11ef5a5d.chunk.js"
+    "static/js/runtime-main.139f6221.js",
+    "static/js/3.101d12c1.chunk.js",
+    "static/css/main.bffeba34.chunk.css",
+    "static/js/main.b3e26a4f.chunk.js"
   ]
 }

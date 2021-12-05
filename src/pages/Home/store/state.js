@@ -1,6 +1,6 @@
 import { fromJS } from 'immutable';
 import backgroundImg from '../../../public/img/desktop.jpg';
-import document from '../../../public/img/app/documents.png';
+/* import document from '../../../public/img/app/documents.png'; */
 import calculator from '../../../public/img/app/calculator.png';
 import chrome from '../../../public/img/chrome/chrome.png';
 import calendar from '../../../public/img/app/calendar.png';
@@ -22,7 +22,7 @@ export default fromJS({
         week: ''
     },
     desktopApps: [
-        { 
+       /*  { 
             name: '文件夹', 
             type: 'document', 
             img: document, 
@@ -52,7 +52,7 @@ export default fromJS({
                 horizontalcenterline: 93 / 2,
             },
             disableDrag: false
-        },
+        }, */
         { 
             name: '计算器', 
             type: 'calculator', 
@@ -68,19 +68,19 @@ export default fromJS({
             },
             iconPosition: {
                 x: 0,
-                y: 93
+                y: 0
             },
             dragline: {
                 x: 0,
-                y: 93,
+                y: 0,
                 width: 60,
                 height: 93,
                 leftline: 0,
-                rightline: 93 + 60,
+                rightline: 0 + 60,
                 topline: 0,
-                bottomline: 93 + 93,
+                bottomline: 0 + 93,
                 verticacenterline: 60 / 2,
-                horizontalcenterline: (93 + 93) / 2,
+                horizontalcenterline: 93 / 2,
             },
             maxWidth: 400,
             disableDrag: false
@@ -101,19 +101,19 @@ export default fromJS({
             },
             iconPosition: {
                 x: 0,
-                y: 186
+                y: 93
             },
             dragline: {
                 x: 0,
-                y: 186,
+                y: 93,
                 width: 60,
                 height: 93,
                 leftline: 0,
-                rightline: 186 + 60,
+                rightline: 93 + 60,
                 topline: 0,
-                bottomline: 186 + 186,
+                bottomline: 93 + 93,
                 verticacenterline: 60 / 2,
-                horizontalcenterline: (186 + 186) / 2,
+                horizontalcenterline: (93 + 93) / 2,
             },
             disableDrag: false
         },
@@ -133,20 +133,20 @@ export default fromJS({
             },
             iconPosition: {
                 x: 0,
-                y: 279
+                y: 186
             },
             disableDrag: false,
             dragline: {
                 x: 0,
-                y: 279,
+                y: 186,
                 width: 60,
                 height: 93,
                 leftline: 0,
-                rightline: 279 + 60,
+                rightline: 186 + 60,
                 topline: 0,
-                bottomline: 279 + 279,
+                bottomline: 186 + 186,
                 verticacenterline: 60 / 2,
-                horizontalcenterline: (279 + 279) / 2,
+                horizontalcenterline: (186 + 186) / 2,
             },
             isBigSize: true
         },
@@ -165,19 +165,19 @@ export default fromJS({
             },
             iconPosition: {
                 x: 0,
-                y: 372
+                y: 279
             },
             dragline: {
                 x: 0,
-                y: 372,
+                y: 279,
                 width: 60,
                 height: 93,
                 leftline: 0,
-                rightline: 372 + 60,
+                rightline: 279 + 60,
                 topline: 0,
-                bottomline: 372 + 372,
+                bottomline: 279 + 279,
                 verticacenterline: 60 / 2,
-                horizontalcenterline: (372 + 372) / 2,
+                horizontalcenterline: (279 + 279) / 2,
             },
             disableDrag: false,
             isBigSize: true
